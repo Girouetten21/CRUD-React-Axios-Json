@@ -1,0 +1,32 @@
+  .th {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+
+  .table {
+    width: 800px;
+    height: 200px; 
+    margin: 0 auto;
+    overflow-y: auto;
+  }
+
+  .search-bar {
+    margin: 20px auto; 
+    width: 50%; 
+    text-align: center; 
+  }
+  
+  .search-input {
+    padding: 10px; 
+    font-size: 18px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+  }

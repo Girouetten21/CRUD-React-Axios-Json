@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "name": "Marcos",
+      "username": "Mapere",
+      "country": "Venezuela",
+      "id": "1"
+    },
+    {
+      "name": "Dayanary",
+      "username": "Dareira",
+      "country": "Venezuela",
+      "id": "2"
+    },
+    {
+      "name": "Daniel",
+      "username": "Danoja",
+      "country": "Reino Unido de Gran Bretaña e Irlanda del Norte",
+      "id": "3"
+    },
+    {
+      "name": "Wilson",
+      "username": "Wilvarez",
+      "country": "República Independiente y Soberana de Kiribati",
+      "id": "4"
+    },
+    {
+      "name": "Alejandrostefano",
+      "username": "Alezan",
+      "country": "Brasil",
+      "id": "5"
+    },
+    {
+      "name": "Cristóbalbaltazar",
+      "username": "Crisolvanamanano",
+      "country": "Costa Rica",
+      "id": "6"
+    }
+  ]
+}
