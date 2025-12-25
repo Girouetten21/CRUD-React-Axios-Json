@@ -1,47 +1,76 @@
-# User Management CRUD App
+# 🌐 CRUD Asíncrono con React, Axios y JSON Server
 
-## Introduction ✨
+Este proyecto Fullstack simula la interacción de una aplicación **React** con una API externa para realizar las operaciones básicas de persistencia de datos (CRUD). Utiliza **Axios** para las peticiones HTTP y **JSON Server** para montar una API REST simulada.
 
-This is a practical project that demonstrates a basic CRUD (Create, Read, Update and Delete) application for managing users. The application is built using React and Axios, and utilizes a JSON Server to store and retrieve user data from a JSON file.
+Este desarrollo fue realizado como parte de la práctica avanzada de Oplesk Academy, enfocándose en el manejo de la asincronía.
 
-## Features ⚙️
+---
 
-* Create, read, update, and delete users
-* Built using React and JavaScript for a seamless user experience.
-* Utilizes Axios for making HTTP requests to the JSON Server.
-* JSON Server stores and retrieves user data from a JSON file.
+## 🚀 Funcionalidades y Endpoints
 
-## System Requirements 🔧
+La aplicación gestiona una entidad (ej. Usuarios o Tareas) y se comunica con la API simulada utilizando los métodos HTTP correspondientes:
 
-Make sure you have Node.js and npm installed on your system before running the application. This project requires the following dependencies to be installed:
+| Operación CRUD | Método HTTP | Endpoint (Simulado) | Descripción |
+| :--- | :--- | :--- | :--- |
+| **C**reate (Crear) | `POST` | `/api/users` | Envía un nuevo objeto de usuario al servidor. |
+| **R**ead (Leer) | `GET` | `/api/users` | Solicita la lista completa de usuarios. |
+| **U**pdate (Actualizar) | `PUT` o `PATCH` | `/api/users/:id` | Modifica un registro existente. |
+| **D**elete (Eliminar) | `DELETE` | `/api/users/:id` | Elimina un registro específico del servidor. |
 
-* Node.js (version 14 or higher)
-* npm (version 6 or higher)
-* axios (version 1.7.7)
-* react (version 18.3.1)
-* react-dom (version 18.3.1)
-* react-router (version 6.26.2)
-* react-router-dom (version 6.26.2)
-* react-scripts (version 5.0.1)
+---
 
-You can install all these dependencies using pip with the "requeriments.txt" file
+## 💻 Stack Tecnológico Utilizado
 
-* pip install -r requirements.txt
+Este proyecto destaca por la integración de herramientas específicas para la comunicación cliente-servidor:
 
-## Getting Started 🚀
+| Categoría | Tecnología | Rol en el Proyecto |
+| :--- | :--- | :--- |
+| **Framework UI** | **React** | Construcción de la interfaz de usuario y manejo del estado. |
+| **Librería HTTP** | **Axios** | Cliente HTTP basado en Promesas para realizar peticiones (GET, POST, etc.) a la API REST. |
+| **Simulación Backend** | **JSON Server** | Levanta una API REST simple y rápida a partir de un archivo JSON, simulando un servidor real. |
+| **Gestión de Estado** | **React Hooks** | Uso de `useState` para datos y `useEffect` para el ciclo de vida de las peticiones. |
 
-To run the application, follow these steps:
+---
 
-1. Start the JSON Server
+## ⚙️ Arquitectura y Puntos Clave de Aprendizaje
 
-* npx json-server --port 4000 src/data/data.json
+Este proyecto fue crítico para consolidar el entendimiento del flujo de datos en aplicaciones modernas:
 
-2. Start the React App
+* **Asincronía (Promises):** Implementación de funciones asíncronas (`async/await`) dentro de los componentes para manejar las respuestas de red.
+* **Manejo de Carga y Errores:** Gestión del estado de la interfaz durante las peticiones (`isLoading`, `hasError`) para ofrecer una mejor experiencia de usuario.
+* **Comunicación Cliente-Servidor:** Demostración de cómo se traduce una acción del usuario (ej. clic en "Eliminar") en una petición HTTP (`DELETE`) y cómo se actualiza el estado de React con la respuesta del servidor.
+* **Interacción con API REST:** Comprensión de los códigos de estado HTTP y cómo reaccionar a ellos.
 
-* npm start
+---
 
-This will start the JSON Server and then launch the React App.
+## 🎬 Cómo Ejecutar el Proyecto
 
-## Contribution 👍
+Para ejecutar este proyecto, se requiere iniciar tanto la aplicación React como el JSON Server.
 
-If you want to contribute to this project, you can report issues or submit feature requests on the GitHub repository. You can also contribute code by submitting a pull request.
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone [https://github.com/Girouetten21/CRUD-React-Axios-Json.git](https://github.com/Girouetten21/CRUD-React-Axios-Json.git)
+    cd CRUD-React-Axios-Json
+    ```
+2.  **Instalar dependencias:**
+    ```bash
+    npm install
+    # o 
+    yarn install
+    ```
+3.  **Iniciar el JSON Server (Mock API):**
+    Asegúrate de tener `json-server` instalado globalmente o como dependencia de desarrollo.
+    ```bash
+    # Comando específico para levantar el servidor
+    npm run api  # o el comando definido en el package.json
+    ```
+4.  **Ejecutar la aplicación React:**
+    ```bash
+    npm start
+    # o
+    yarn start
+    ```
+    La aplicación estará disponible en `http://localhost:3000`.
+
+---
+**Desarrollado por:** [@Girouetten21](https://github.com/Girouetten21)
